@@ -4,7 +4,7 @@ import logo from "/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4 bg-transparent mx-90">
+    <nav className="flex justify-between items-center  mx-20 p-4 bg-transparent">
       <a href="/" className="">
         <img src={logo} alt="" />
       </a>
@@ -12,7 +12,7 @@ const Navbar = () => {
         <ul className="sm:flex gap-8 items-center">
           {navbarItems.map((item) => (
             <li>
-              <a className="text-surface text-sm" href={item.href}>
+              <a className="text-surface text-xl font-light" href={item.href}>
                 {item.text}
               </a>
             </li>

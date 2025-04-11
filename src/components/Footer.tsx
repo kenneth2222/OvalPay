@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="flex items-center justify-center py-6 p-2">
-      <div className="border-t border-primary-foreground w-full py-18 max-w-[1440px] p-8 space-y-6">
+      <div className="border-t border-primary-foreground w-full py-18  p-8 space-y-6 mx-20">
         <p className="">
           Ovalpay is a product of Web3 Global conference LLC. A comprehensive
           blockchain ecosystem company, offering a diverse range of products and

@@ -4,8 +4,8 @@ import serviceDevice from "/service/service-device.svg";
 // todo: set all section max with to 1440px
 const Service = () => {
   return (
-    <section className="p-2">
-      <div className="max-w-[1440px] mx-auto space-y-20">
+    <section className="p-2 md:py-14">
+      <div className="space-y-20 mx-20">
         <div className="text-center flex flex-col items-center gap-5">
           <h2 className="text-[24px]">
             We Deliver The Best{" "}

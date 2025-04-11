@@ -5,7 +5,7 @@ import { guides } from "@/data/howItWorks";
 const HowItWorks = () => {
   return (
     <section className="flex items-center justify-center mx-auto bg-gradient-to-b from-background from-70% to-indigo-950 py-14">
-      <div className="max-w-[1440px] w-full p-2 space-y-9 flex flex-col">
+      <div className=" w-full p-2 space-y-9 flex flex-col mx-20">
         <SectionTitle title="How It Works" />
         <div className="space-y-9 px-2">
           <div className="min-h-[466px] relative rounded-[20px] bg-gray-700 flex flex-wrap gap-9 items-center justify-center p-12 px-4 overflow-hidden">

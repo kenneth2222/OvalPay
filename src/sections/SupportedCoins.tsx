@@ -11,8 +11,8 @@ import AppStoreButton from "@/components/AppStoreButton";
 
 const SupportedCoins = () => {
   return (
-    <section className="flex items-center justify-center">
-      <div className="p-4 w-full max-w-[1440px] mx-auto space-y-18">
+    <section className="flex items-center justify-center md:py-14">
+      <div className="p-4 w-full  mx-20 space-y-18">
         <div className="flex flex-col items-center gap-4">
           <h2 className="font-[600] text-xl">Supported Stablecoins</h2>
           <div className="flex items-center justify-center flex-wrap gap-20 ">

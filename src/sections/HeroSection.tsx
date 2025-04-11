@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="flex md:py-14">
-      <div className="flex p-4 gap-18 flex-wrap mx-auto">
+      <div className="flex justify-between mx-20">
         <div className="space-y-16 max-w-3xl">
           <div className="flex gap-2 items-center justify-center sm:justify-start">
             {heroTables.map((data, index) => (
@@ -28,7 +28,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 w-full md:w-fit">
+        <div className="flex-1 w-full md:w-fit ml-100">
           <HeroConvertCard />
         </div>
       </div>
