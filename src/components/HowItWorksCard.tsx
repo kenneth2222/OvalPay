@@ -6,7 +6,7 @@ const HowItWorksCard: React.FC<GuideCardProps> = ({
   index,
 }) => {
   return (
-    <div className="flex flex-col gap-6 w-[275px]">
+    <div className="flex flex-col items-center sm:items-start gap-6 w-[275px]">
       <span className="bg-primary-foreground font-semibold text-secondary text-2xl rounded-xl size-[80px] flex items-center justify-center">
         {index}
       </span>

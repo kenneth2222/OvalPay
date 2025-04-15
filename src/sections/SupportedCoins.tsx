@@ -11,11 +11,11 @@ import AppStoreButton from "@/components/AppStoreButton";
 
 const SupportedCoins = () => {
   return (
-    <section className="flex items-center justify-center md:py-14">
-      <div className="p-4 w-full  mx-20 space-y-18">
+    <section className="flex items-center justify-center">
+      <div className="p-4 w-full max-w-[1440px] mx-auto space-y-18">
         <div className="flex flex-col items-center gap-4">
           <h2 className="font-[600] text-xl">Supported Stablecoins</h2>
-          <div className="flex items-center justify-center flex-wrap gap-20 ">
+          <div className="flex items-center justify-center flex-wrap gap-4 ">
             {stableCoins.map((coin, index) => (
               <div key={index} className="flex items-center gap-1">
                 <img src={coin.icon} alt="" className="size-[30px]" />
@@ -27,7 +27,7 @@ const SupportedCoins = () => {
             <span className="font-semibold text-2xl">More coming</span>
           </div>
         </div>
-        <div className="grid sm:grid-cols-2 border border-secondary rounded-[20px] p-4 sm:p-12 items-center gap-4 min-h-[512px] bg-secondary/10 w-full overflow-hidden">
+        <div className="grid sm:grid-cols-2 border-b sm:border border-secondary sm:rounded-[20px] p-4 sm:p-12 items-center gap-4 min-h-[512px] bg-secondary/10 w-full overflow-hidden">
           <div className="relative max-w-fit">
             <p className="max-w-80 text-4xl font-semibold">
               Frequently Asked Questions
@@ -35,7 +35,7 @@ const SupportedCoins = () => {
             <img
               src="/logo-icon.svg"
               alt=""
-              className="absolute sm:-bottom-10 -right-20"
+              className="hidden sm:absolute sm:-bottom-10 -right-20"
             />
           </div>
           <div className="">
@@ -60,21 +60,23 @@ const SupportedCoins = () => {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="h-15 bg-secondary-foreground"
+                className="h-15 bg-secondary-foreground max-w-[734px]"
               />
               <ArrowUpRight className="absolute right-5 top-[16%] my-auto bg-secondary rounded-full size-9" />
             </div>
           </div>
-          <div className="flex flex-col gap-4 items-end px-4">
+          <div className="flex flex-col gap-4 items-end sm:px-4">
             <p className="text-2xl font-semibold">App coming soon</p>
-            <AppStoreButton
-              icon="/app-store/Google-Play-Icon.svg"
-              name="Google Play"
-            />
-            <AppStoreButton
-              icon="/app-store/Apple-Store-Icon.svg"
-              name="Google Play"
-            />
+            <div className="flex justify-between sm:justify-center sm:flex-col flex-wrap gap-2 items-end w-full">
+              <AppStoreButton
+                icon="/app-store/Google-Play-Icon.svg"
+                name="Google Play"
+              />
+              <AppStoreButton
+                icon="/app-store/Apple-Store-Icon.svg"
+                name="Google Play"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ const WhyChooseUsCard: React.FC<WhyChooseUsCardProps> = ({
               <div className="">
                 <h3 className="text-2xl capitalize font-semibold">{title}</h3>
               </div>
-              <div className="sm:max-w-72 text-gray-400">
+              <div className="sm:max-w-72">
                 <p>{description}</p>
               </div>
             </div>

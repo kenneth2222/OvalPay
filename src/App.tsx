@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import Navbar from "./components/ui/Navbar";
 import HeroSection from "./sections/HeroSection";
 import WhyChooseUsSection from "./sections/WhyChooseUsSection";
@@ -11,8 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <main className="space-y-28 py-12 mx-12"> */}
-      <main>
+      <main className="space-y-28 py-12">
         <HeroSection />
         <WhyChooseUsSection />
         <Service />

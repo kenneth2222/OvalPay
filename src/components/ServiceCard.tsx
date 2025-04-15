@@ -11,12 +11,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div
         className={`flex flex-row-reverse justify-end sm:${
           reverse ? "flex-row-reverse" : "flex-row"
-        } items-center gap-4`}
+        } items-center gap-4 mx-auto sm:mx-0`}
       >
         <h3 className="text-2xl font-semibold">{title}</h3>
         <img src={serviceIcon} alt="" className="size-[53px]" />
       </div>
-      <div className="">
+      <div className="text-center sm:text-left">
         <p>{detail}</p>
       </div>
     </div>
